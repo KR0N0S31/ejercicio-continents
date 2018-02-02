@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Continenetes. {% endblock %}
+{% block content %}
+    <h1>Continentes.</h1>
+    {% for i in continent_list %}
+    <div>
+        <h3>{{ i.name|title }}</h3>
+        <p>Traduccion: {{ i.traslation }}</p>
+        <p>Color: {{ i.color }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
